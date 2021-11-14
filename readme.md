@@ -207,11 +207,12 @@ to create custom shot charts.
 ## DATA DICTIONARY
 ` `
 
-### **leagues**
+## **leagues**
 | Column  | Description |
 | ------------- | ------------- |
 | id  | Primary Key (note this is a text field as it can have a leading zero)  |
 | league_name | Name of the league (NBA, WNBA, G League) |
+
 ` `
 
 ## **seasons**
@@ -219,6 +220,7 @@ to create custom shot charts.
 | ------------- | ------------- |
 | id  | Primary Key (YYYY)  |
 | season_name | The years in the season (YYYY-YY) |
+
 ` `
 
 ## **season_types**
@@ -226,12 +228,14 @@ to create custom shot charts.
 | ------------- | ------------- |
 | id  | Primary Key  |
 | season_type_name | Pre Season, Regular Season, Playoffs, or Showcase |
+
 ` `
 
 ## **teams**
 | Column  | Description |
 | ------------- | ------------- |
 | id  | Primary Key  |
+
 ` `
 
 ## **league_season_teams**
@@ -247,6 +251,7 @@ to create custom shot charts.
 | team_conference | Which league conference the team is in |
 | team_division | Which league division the team is in |
 | team_code | Code for the team used in the NBA API |
+
 ` `
 
 ## **players**
@@ -261,6 +266,7 @@ to create custom shot charts.
 | draft_year  | Year the player was drafted  |
 | draft_round  | Round in which the player was drafted  |
 | draft_number  | The pick number at which the player was drafted  |
+
 ` `
 
 ## **games**
@@ -301,6 +307,7 @@ to create custom shot charts.
 | pf  | Player Fouls  |
 | pts  | Points  |
 | plus_minus  | Plus minus  |
+
 ` `
 
 ## **game_events**
@@ -327,6 +334,7 @@ to create custom shot charts.
 | person_3_type  | Tells what type of id is in the next columns - 4 is home team player, 5 is away team player, 2 is home team, 3 is away team, 0 means NULL, 6 is home team non player (coach), 7 is away team non player  |
 | person_3_id  | id of the player describe in the person type column  |
 | person_3_team_id  | id of the team describe in the person type column  |
+
 ` `
 
 ## **game_shot_charts**
